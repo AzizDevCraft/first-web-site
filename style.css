@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 600px;
+    background-image: url(images/eggs.jpg);
+}
+
+.bannier {
+    background: rgba(28, 28, 28, 0.4);
+    height: 100%;
+    position: relative;
+}
+
+.bannier nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 29px 165px;
+}
+
+.bannier nav a {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.bannier nav ul {
+    list-style: none;
+    display: flex;
+    gap: 27px;
+}
+
+.bannier nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.bannier nav ul li a.in-box {
+    padding: 11px 10.5px;
+    border: 1px solid #C89446;
+}
+
+.bannier main {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    translate: 50% -50%;
+    text-align: center;
+}
+
+.bannier main .welcome {
+    font-size:60px;
+    font-family: "Pinyon Script", cursive;
+    line-height: 50px;
+    font-style: normal;
+    color: #C89446;
+    margin-bottom: 6px;
+}
+
+.bannier main .name {
+    font-size: 70px;
+    letter-spacing: 11px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.bannier main .description {
+    color: #fff;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 300;
+}
