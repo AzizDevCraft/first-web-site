@@ -121,6 +121,9 @@ main {
     width: 90%;
     margin: 0 auto;
     padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .container .article {
@@ -138,6 +141,7 @@ main {
     width: 350px;
     height: 425px;
     background-image: url(images/burger.jpg);
+    flex-shrink: 0;
 }
 
 .container .article .image-box::before {
@@ -151,7 +155,7 @@ main {
     z-index: -1;
 }
 
-.container .article .txt hr {
+.sep {
     border: #C89446 solid 2px;
     width: 24px;
 }
@@ -193,6 +197,7 @@ main {
     display: flex;
     flex-direction: row-reverse;
     margin: 0 auto;
+    margin-bottom: 110px;
 }
 
 .container .right-content .image-box {
@@ -201,21 +206,142 @@ main {
 
 .container .right-content .image-box::before {
     content: "";
-    border: 2px solid transparent;
-    width: 350px;
-    height: 425px;
-    position: absolute;
-    top: -20px;
-    left: -20px;
-}
-
-.container .right-content .image-box::after {
-    content: "";
     border: 2px solid #C89446;
     width: 350px;
     height: 425px;
     position: absolute;
     top: -20px;
     right: -20px;
+    left: initial;
+    
+}
+
+/* partie menu */
+
+.menu {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.middle-sep {
+    position: relative;
+    right: -50%;
+    margin-bottom: 10px;
+}
+
+.menu .en-tete {
+    text-align: center;
+}
+
+.menu .en-tete h1 {
+    font-size:40px;
+    font-family: "Pinyon Script", cursive;
+    font-style: normal;
+    color: #C89446;
+    margin: 5px 0;
+}
+
+.menu .en-tete h2 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #383838;
+    margin-bottom: 10px;
+}
+
+.menu .en-tete p {
+    max-width: 640px;
+    margin-bottom: 64px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #6F6F6F;
+}
+
+.menu nav {
+    width: 500px;
+    margin-bottom: 122px;
+}
+
+.menu nav ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.menu nav ul li a {
+    text-decoration: none;
+    color: #383838;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.menu nav ul li a:hover, .menu nav ul li a.active {
+    border-bottom: #C89446 2px solid;
+}
+
+.container .menu .principal .line {
+    width: 100%;
+    display: flex;
+    justify-content: space-between ;
+    margin-bottom: 100px;
+}
+
+.container .menu .principal::after {
+    content: "";
+    width: 425px;
+    height: 425px;
+    border: #C89446 solid 2px;
+    rotate: 45deg;
+    position: absolute;
+    top: 400px;
+    left: 353px;
     z-index: -1;
 }
+
+.menu .principal .line .part .img-box {
+    width: 160px;
+    height: 160px;
+}
+
+.menu .principal .line .part {
+    width: 40%;
+    display: flex;
+    gap: 32px;
+}
+
+.menu .principal .line .part .txt p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #6F6F6F;
+    line-height: 24px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+.menu .principal .line .part .txt h2 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #383838;
+    font-weight: 700;
+    background: #fff;
+}
+
+.menu .principal .line .part .txt .price {
+    font-size: 40px;
+    color: #C89446;
+    font-weight: 300;
+    font-family: "Pinyon Script", cursive;
+}
+
+.menu .principal .line .right {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
