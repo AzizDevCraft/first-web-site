@@ -164,7 +164,7 @@ main {
     width: 450px;
 }
 
-.container .article .txt h1{
+.titre-jaune{
     font-size:40px;
     font-family: "Pinyon Script", cursive;
     font-style: normal;
@@ -172,7 +172,7 @@ main {
     margin: 5px 0;
 }
 
-.container .article .txt h2 {
+.sous-titre {
     font-size: 28px;
     font-weight: 700;
     letter-spacing: 2px;
@@ -345,3 +345,36 @@ main {
     flex-direction: row-reverse;
 }
 
+/* partie bas du menu principale */
+
+.container .foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.container .foot .txt p {
+    white-space: pre-line;
+    font-size: 16px;
+    line-height: 26px;
+    color: #6F6F6F;
+    font-weight: 400;
+    max-width: 700px;
+}
+
+.container .foot .image-box {
+    background: url(images/chef.png);
+    width: 353px;
+    height: 611px;
+}
+
+.container .foot .image-box::after {
+    content: "";
+    width: 180px;
+    height: 110px;
+    background: url(images/signature.png);
+    position: absolute;
+    bottom: 100px;
+    right: 250px;
+}
