@@ -412,4 +412,50 @@ main {
     color: #6F6F6F;
     font-size: 16px;
     width: 640px;
+    margin-bottom: 64px;
+}
+
+.reservation .content form {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 64px;
+}
+
+.reservation .content form .data {
+    width: 255px;
+    height: 40px;
+    background: transparent;
+    border: solid 2px rgba(255, 255, 255, .4);
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+.reservation .content form .data:focus {
+    background: rgba(255, 255, 255, 0.2);
+    border: solid 2px #C89446;
+}
+
+.reservation .content form .data::placeholder {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14;
+    font-weight: 400;
+}
+
+.reservation .content form option {
+    color: #fff;
+    background: transparent;
+    text-transform: uppercase;
+}
+
+.reservation .content button {
+    padding: 12px 64px;
+    color: #fff;
+    background: #C89446;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    border-radius: 3px;
+    border: none;
+    font-weight: 600;
 }
